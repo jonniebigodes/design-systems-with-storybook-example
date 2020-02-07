@@ -1,7 +1,7 @@
 {
-  "name": "learnstorybook-design-system-example",
+  "name": "@jonniebigodes/learnstorybook-design-system",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -15,12 +15,18 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cross-env BABEL_ENV=production babel src -d dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
+    "build-storybook-docs": "build-storybook -s public --docs",
     "chromatic": "CHROMATIC_APP_CODE=pihugtxzn5g chromatic"
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -38,14 +44,24 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@storybook/addon-a11y": "^5.3.12",
     "@storybook/addon-actions": "^5.3.12",
+    "@storybook/addon-docs": "^5.3.12",
     "@storybook/addon-knobs": "^5.3.12",
     "@storybook/addon-links": "^5.3.12",
     "@storybook/addon-storysource": "^5.3.12",
     "@storybook/addons": "^5.3.12",
     "@storybook/preset-create-react-app": "^1.5.2",
     "@storybook/react": "^5.3.12",
+    "auto": "^9.10.4",
+    "cross-env": "^7.0.0",
     "prettier": "^1.19.1",
     "storybook-chromatic": "^3.5.1"
-  }
+  },
+  "description": "Learn Storybook design system example code for testing purposes",
+  "main": "dist/index.js",
+  "repository": "https://github.com/jonniebigodes/design-systems-with-storybook-example.git",
+  "author": "jonniebigodes <jonniebigodes@hotmail.com>",
+  "license": "MIT"
 }
