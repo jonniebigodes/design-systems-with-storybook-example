@@ -1,12 +1,7 @@
 # v0.1.1 (Tue Feb 25 2020)
 
-#### ⚠️  Pushed to master
+- Created first version of the design system, with `Avatar`, `Badge`, `Button`, `Icon` and `Link` components.
 
-- changes up to distribute section  ([@jonniebigodes](https://github.com/jonniebigodes))
-- a simple test added for link  ([@jonniebigodes](https://github.com/jonniebigodes))
-- adding chromatic  ([@jonniebigodes](https://github.com/jonniebigodes))
-- ignore storybook static  ([@jonniebigodes](https://github.com/jonniebigodes))
-- changes for review chapter  ([@jonniebigodes](https://github.com/jonniebigodes))
 
 #### Authors: 1
 
