@@ -23,3 +23,8 @@ jobs:
 
       - run: yarn test
       - run: yarn chromatic test --app-code=pihugtxzn5g --exit-zero-on-changes
+      - run: |
+          if [ $CIRCLE_BRANCH = "master" ]
+          then
+            yarn release
+          fi
